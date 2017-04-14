@@ -1,0 +1,30 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "my portfolio project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stoicbum/Portfolio_Project.git"
+  },
+  "keywords": [
+    "grunt",
+    "portfolio"
+  ],
+  "author": "Jason Derr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stoicbum/Portfolio_Project/issues"
+  },
+  "homepage": "https://github.com/stoicbum/Portfolio_Project#readme",
+  "devDependencies": {
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-mkdir": "^1.0.0",
+    "grunt-responsive-images": "^1.10.1",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
