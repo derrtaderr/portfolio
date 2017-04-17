@@ -3,7 +3,8 @@
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif;
 }
-img{
+
+img {
     transition: width 0.5s;
     max-width: 100%;
 }
@@ -13,54 +14,57 @@ img{
     color:#2d3c49;
     font-weight: 300;
 }
-.row{
+
+.row {
     width: 100%;
 }
+
 .text-muted {
     color: #bcbbbb;
 }
-.text-thin{
+
+.text-thin {
     font-weight: 100;
 }
 
-.title-super{
+.title-super {
     font-size: 60px;
 }
 
-.title-logo{
+.title-logo {
     margin-top: 20px;
 }
 
-hr{
+hr {
     border:2px solid #7d97ad;
 }
 
-h3.text-uppercase{
+.text-uppercase {
     font-weight: bold;
 
 }
 
-div#social{
+.social {
     text-shadow: 3px 3px 3px #aaa;
     line-height: 2em;
     margin: 1em;
     text-align: center;
 
 }
-div#social a {
+.social a {
     margin: 0 1em 0 0;
 }
-div#social a last-of-type {
+.social a last-of-type {
     margin: 0;
 
 }
-.btn{
+.btn {
     background-color: #7d97ad;
 }
-.search{
+.search {
     font-size: 16px;
 }
-.bio{
+.bio {
     font-size: 16px;
     line-height: 30px;
 }
