@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  padding: 0;
+  margin:0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color:#2d3c49;
+}
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: "zocial", sans-serif;
+}
+
+
+img {
+    transition: width 0.5s;
+    max-width: 100%;
+}
+
+p{
+  line-height: 1.5;
+  margin: 0.75em 0;
+}
+.content-container{
+  display: flex;
+  flex: 1 1 auto;
+  padding-top: 10vh;
+  width: 100%;
+  flex-direction: column;
+}
+/* HEADER */
+.header {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+.header-nav {
+  float: right;
+  padding: 5.5vh 20px 0 0;
+}
+.header-nav > li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(125, 151, 173, 0.2);
+  padding-left: 1em;
+}
+.header-nav a {
+  color: ;
+}
+.header-nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a:hover {
+  color: #fff;
+}
+/*navagation links*/
+.nav-links a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-links a:hover,
+.nav-links a:active  {
+  color: #ed6e2f;
+}
+.text-muted {
+    color: #bcbbbb;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.title-super {
+    font-size: 60px;
+    padding-top: 1vh;
+}
+
+.title-logo {
+    margin-top: 20px;
+}
+
+hr {
+    border: 2px solid #7d97ad;
+}
+
+.text-uppercase {
+    font-weight: bold;
+}
+
+.social {
+    text-shadow: 3px 3px 3px #aaa;
+    line-height: 2em;
+    margin: 1em;
+    text-align: center;
+}
+
+.social a {
+    margin: 0 1em 0 0;
+}
+
+.social a last-of-type {
+    margin: 0;
+}
+
+.btn {
+    background-color: #7d97ad;
+}
+
+.search {
+    font-size: 1em;
+}
+
+.bio {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+span.flash span{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #7d97ad;
+    transition: top 0.2s;
+    transform: translateZ(0);
+    line-height: 50px;
+}
+.full-hero {
+  height: 90vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  background-size: cover;
+}
+.full-hero:after {
+  bottom: 2vh;
+  color: #fff;
+  content: "﹀";
+  font-size: 36px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,0);
+
+}
+.hero{
+  margin-left: auto;
+  margin-right: auto;
+}
+.home-callout {
+  padding: 7vh 0;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  margin-top: 20px;
+}
+.hero-content {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(0, -50%);
+
+}
+.hero-content h1 {
+  color: rgba(255, 255,255, 0.8);
+  font-size: 7vw;
+  margin-bottom: 0.25em;
+}
+.hero-home {
+  background-image: url(/images_src/hero-photo.jpg);
+  background-position: center top;
+}
+.callout-title {
+  font-size: 5.75vw;
+  text-align: right;
+  text-transform: uppercase;
+  flex: 1;
+
+}
+.callout-copy {
+  font-size: 1em;
+  flex: 0 0 45em;
+  padding: 0 3vw;
+  line-height: 1.5;
+}
