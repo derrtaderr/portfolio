@@ -25,7 +25,7 @@ body {
   color:#2d3c49;
 }
 
-@import url(https://weloveiconfonts.com/api/?family=zocial);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
 /* zocial */
 [class*="zocial-"]:before {
   font-family: "zocial", sans-serif;
@@ -41,24 +41,21 @@ p{
   line-height: 1.5;
   margin: 0.75em 0;
 }
-.content-container{
+.container-fluid{
   display: flex;
   flex: 1 1 auto;
-  padding-top: 10vh;
   width: 100%;
   flex-direction: column;
 }
 /* HEADER */
 .header {
-  background-color: #000;
-  color: #fff;
   position: fixed;
   width: 100%;
   z-index: 20;
 }
 .header-nav {
   float: right;
-  padding: 5.5vh 20px 0 0;
+  padding: 4.8vh 20px 0 0;
 }
 .header-nav > li {
   display: inline-block;
@@ -90,6 +87,8 @@ p{
 }
 .text-muted {
     color: #bcbbbb;
+    padding-top: 10px;
+    font-size: 30px;
 }
 
 .text-thin {
@@ -107,6 +106,7 @@ p{
 
 hr {
     border: 2px solid #7d97ad;
+    margin-top: 0;
 }
 
 .text-uppercase {
@@ -171,12 +171,10 @@ span.flash span{
   margin-right: auto;
 }
 .home-callout {
-  padding: 7vh 0;
+  padding: 2vh 0;
   display: flex;
   align-items: center;
-  background-color: #000;
-  color: #fff;
-  margin-top: 20px;
+  color: #000;
 }
 .hero-content {
   color: #fff;
@@ -205,7 +203,28 @@ span.flash span{
 }
 .callout-copy {
   font-size: 1em;
-  flex: 0 0 45em;
+  flex: 0 0 35em;
   padding: 0 3vw;
   line-height: 1.5;
 }
+/*saxalocity */
+.col-three {
+  display: flex;
+}
+.col {
+  box-sizing: border-box;
+  padding: 2em;
+}
+.col-three .col ~ .col {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.col-three .col-nav {
+  flex: 0 1 15em;
+}
+.col-three .col-content {
+  flex: 1;
+}
+.col-three .col-aside {
+  flex: 0 1 20em
+}
+
