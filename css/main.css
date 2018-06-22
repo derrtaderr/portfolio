@@ -40,12 +40,9 @@ img {
     max-width: 100%;
 }
 
-.home-p{
-  line-height: 1.5;
-  margin: 0.75em 0;
-}
 p {
   line-height: 1.8;
+  margin: 0.75em 0;
 }
 .container-fluid{
   display: flex;
@@ -235,7 +232,7 @@ span.flash span{
 }
 
 
-/*player */
+/*saxalocity player */
 .player {
   border:5px solid rgba(0,0,0,0.2);
   box-shadow:0 0 20px rgba(0,0,0,0.2);
@@ -326,7 +323,7 @@ span.flash span{
     }
 .post-blog h1,
       h2 {
-  font-size: 80px;
+  font-size: 40px;
   font-style: italic;
   font-weight: 100;
   margin: 0;
@@ -335,9 +332,7 @@ span.flash span{
   color: black;
   text-decoration: underline wavy var(--blue);
 }
-.post {
-  width: 100%;
-}
+
 .post-content,
 .post-footer {
   margin: auto;
@@ -356,7 +351,9 @@ span.flash span{
   background-color: rgba(0, 0, 0, 0.01);
   float: right;
   margin: 0 0 2em 2em;
-  padding: 2em;
+}
+.post {
+  width: 100%;
 }
 .post .post-header {
   margin-bottom: 2.5em;
@@ -412,10 +409,14 @@ span.flash span{
 .posts-image {
   background-position: center;
   background-size: cover;
-  height: 6em;
+  height: 10em;
   margin-bottom: 1.5em;
 }
-
+.half-hero {
+  background-position: center center;
+  background-size: cover;
+  height: 40vh;
+}
 .col-two .col-aside {
   flex: 0 0 20em;
   order: 1;
@@ -426,18 +427,35 @@ span.flash span{
 
 /* PAGE STYLES */
 .page {
-  margin: 10vh auto 15vh;
+  margin: 10vh auto;
   max-width: 980px;
   width: 85vw;
 }
-.page h1 {
+.page h1,
+.now h1 {
   font-size: 3em;
   margin-bottom: 1em;
   text-align: center;
 }
-.page h2 {
+.page h2,
+.now h2 {
   margin-bottom: 0.5em;
 }
 .page h4 {
   margin-bottom: 1em;
+}
+/* now */
+.now {
+  text-align: center
+
+}
+.now li {
+  list-style-type: none;
+  padding-top: 20px;
+  font-weight: bold;
+}
+.half-hero {
+  background-position: center center;
+  background-size: cover;
+  height: 40vh;
 }
