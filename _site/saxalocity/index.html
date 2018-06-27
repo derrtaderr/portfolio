@@ -39,35 +39,44 @@
 
 
 
-    <div class="gallery col-three">
-  <div class="col col-nav gallery-thumbs" id="gallery-thumbs">
-    <div class="current">
-       <img src="/images/poster.jpg" alt="Image title 1"
-       data-large-version="/images/poster.jpg"
-       data-title="saxalocity trailer"
-       data-description = "A sneak peak at saxalocity">
+    <script src="/js/saxalocity.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+      activateGallery();
+    });
+  </script>
+<div class="gallery col-three">
+    <div class="col col-nav gallery-thumbs" id="gallery-thumbs">
+        <div class="current">
+            <img src="/images/poster.jpg" alt="Image title 1"
+                data-large-version = "https://www.youtube.com/embed/983-qer6Mng"
+                data-title= "saxalocity trailer"
+                data-description = "A sneak peak at saxalocity">
+        </div>
+        <div class>
+            <img src="/images/poster.jpg" alt="Image title 2"
+                data-large-version="https://www.youtube.com/embed/983-qer6Mng"
+                data-title ="saxalocity episode 1."
+                data-description = "In this episode Sax has fun with slow-mo. hold on to your butts!!">
+        </div>
     </div>
-    <div>
-        <img src="/images/poster.jpg" alt="Image title 2">
+    <div class="col col-content">
+        <div class="gallery-video" id="gallery-video">
+            <iframe class= "player"width="560" height="315" src="https://www.youtube.com/embed/983-qer6Mng" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
     </div>
-  </div>
-  <div class="col col-content">
-    <div class="gallery-photo" id="gallery-photo">
-    <iframe class= "player"width="560" height="315" src="https://www.youtube.com/embed/983-qer6Mng" frameborder="0" poster="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="col col-aside gallery-info" id="gallery-info">
+        <h3 class="title">Saxalocity Trailer</h3>
+        <p class="description">Get ready for Saxalocity! coming this summer</p>
     </div>
-  </div>
-  <div class="col col-aside gallery-info" id="gallery-info">
-    <h3>Video Title 1</h3>
-    <p>Video Description 1</p>
-  </div>
 </div>
-<script src="/js/saxalocity.js"></script>
+
 
     <footer class="row">
       <div class="col-xs-12 text-center">
         <hr class="footer-hr">
         <div class="social">
-          <a href="https://twitter.com/jason_derr" target="_blank" class="zocial-twitter"> </a>
+          <a href="https://twitter.com/TheStoicDev" target="_blank" class="zocial-twitter"> </a>
           <a href="https://plus.google.com/109417711220822823797" class="zocial-googleplus" ></a>
           <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="zocial-linkedin"></a>
           <a href="https://github.com/stoicbum" target="_blank" class="zocial-github"></a>

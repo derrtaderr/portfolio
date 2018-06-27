@@ -9,8 +9,7 @@ layout: default
     <header class="post-header">
       <h1>{{ page.title }}</h2>
       <div class="post-byline">
-        <img src="{{ page.gravatar }}">
-        <a href="{{ page.authorTwitter }}" class="social-link">Tw</a>
+        <a href="https://twitter.com/TheStoicDev" target="_blank" class="zocial-twitter"> </a>
         by: {{ page.author }}
         <span> - {{ page.date | date: '%B %d, %Y' }}</span>
       </div>
@@ -29,8 +28,6 @@ layout: default
     <div class="post-content">
       {{ content }}
     </div>
-    <footer class="post-footer">
-      {{ page.postFooter }}
-    </footer>
+
   </article>
 </div>
