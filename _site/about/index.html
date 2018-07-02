@@ -4,11 +4,12 @@
 <head>
   <title>Jason Derr</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <script src="/js/jquery-3.2.0.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
 </head>
@@ -18,6 +19,8 @@
   <div class="col-md-12 text-left text-uppercase">
     <header class="row">
       <nav>
+        <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+        <label for="mobile-menu" class="show-mobile-menu">☰</label>
         <ul class="header-nav nav-links">
           <li><a href="/">Home</a></li>
 <li><a href="/about">About</a></li>
@@ -26,11 +29,22 @@
 <li><a href="/saxalocity">Saxalocity</a></li>
 <li><a href="/now">now</a></li>
         </ul>
-        <h1 class="title-super text-thin">Jason Derr</h1>
-      </nav>
+        </nav>
+        <h1 class="title-super text-thin"><a href = "/">Jason Derr</h1></a>
       <hr>
       </div>
     </header>
+    <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+
+  </script>
 
 
 
@@ -39,16 +53,133 @@
 
 
 
-    
+    <section class="section is-medium is-primary has-text-centered is-long">
+    <div class = "container">
+        <div class="columns is-centered">
+            <div class="column is-three-fifths">
+                <h2 class="about-subtitle">Since beginning my journey as a web-developer nearly 3 years ago, I have gained a serious passsion for web-development. As a web developer, I find my obsessive attention to constantly getting better has served me well. I'm quietly confident, naturally curious, and perpetually improving my chops. </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section skills has-text-centered">
+    <div class="container is-narrow">
+        <div class="box">
+            <div class="content">
+                <div class="columns is-centered">
+                    <div class="column">
+                        <span class="about-social" style="font-size: 3em"><i class="fab fa-html5"></i></span>
+                        <h1 class="title-skills">Front-End Developer</h1>
+                        <p>
+                            That feeling of excitment when you bring an idea to life in the browser never gets old.
+                        </p>
+                        <p class="title-skills">Front-End Languages:</p>
+                        <p>HTML, CSS, JavaScript, Sass,</p>
+                        <p class= "title-skills">Front-End Tool Belt:</p>
+                        <ul>
+                            <li class="skills-list">
+                                Sublime Text
+                            </li>
+                            <li class="skills-list">
+                                Bootstrap
+                            </li>
+                            <li class="skills-list">
+                                Git
+                            </li>
+                            <li class="skills-list">
+                                Command Line
+                            </li>
+                            <li class="skills-list">
+                                Jekyll
+                            </li>
+                            <li class="skills-list">
+                                jQuery
+                            </li>
+                            <li class="skills-list">
+                                Grunt
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <span class="about-social" style="font-size: 3em"><i class="fab fa-python"></i></span>
+                        <h1 class="title-skills">Back-End Developer</h1>
+                        <p>
+                         The development of server-side logic and maintaining a database is what first drew me to web development.
+                        </p>
+                        <p class="title-skills">Back-End Languages: </p>
+                        <p>Python, MySql, PostgreSQL, MongoDB </p>
+                        <p class="title-skills">Back-End Tool Belt: </p>
+                        <ul>
+                            <li class="skills-list">
+                                RESTful API
+                            </li>
+                            <li class="skills-list">
+                                Command Line
+                            </li>
+                            <li class="skills-list">
+                                Ubuntu
+                            </li>
+                            <li class="skills-list">
+                                AWS
+                            </li>
+                            <li class="skills-list">
+                                Flask
+                            </li>
+                            <li class="skills-list">
+                                vagrant
+                            </li>
+                            <li class="skills-list">
+                                Git
+                            </li>
+                            <li class="skills-list">
+                                oAuth2
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <span class="about-social" style="font-size: 3em"><i class="fas fa-book-open"></i></span>
+                        <h1 class="title-skills">Student</h1>
+                        <p>
+                            I want to be the best developer I can be. Get 1% better everyday. I will never be satasified with what I know.
+                        </p>
+                        <p class="title-skills">Knowledge:</p>
+                        <p>Classes, Books, Videos, </p>
+                        <p class="title-skills">Knowledge Tools:</p>
+                        <ul>
+                            <li class="skills-list">
+                                Udacity Nanodegrees
+                            </li>
+                            <li class="skills-list">
+                                FreeCodeCamp
+                            </li>
+                            <li class="skills-list">
+                                Meetups
+                            </li>
+                            <li class="skills-list">
+                                Learn Enough To Be Dangrous
+                            </li>
+                            <li class="skills-list">
+                                online courses (Wes Bos)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
     <footer class="row">
       <div class="col-xs-12 text-center">
         <hr class="footer-hr">
         <div class="social">
-          <a href="https://twitter.com/TheStoicDev" target="_blank" class="zocial-twitter"> </a>
-          <a href="https://plus.google.com/109417711220822823797" class="zocial-googleplus" ></a>
-          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="zocial-linkedin"></a>
-          <a href="https://github.com/stoicbum" target="_blank" class="zocial-github"></a>
+          <a href="https://twitter.com/TheStoicDev" target="_blank" <i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/jasonderr/" target="_blank" <i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" <i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/stoicbum" target="_blank" <i class="fab fa-github"></i></a>
         </div>
       </div>
     </footer>

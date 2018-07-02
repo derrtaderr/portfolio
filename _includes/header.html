@@ -2,14 +2,27 @@
   <div class="col-md-12 text-left text-uppercase">
     <header class="row">
       <nav>
+        <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+        <label for="mobile-menu" class="show-mobile-menu">☰</label>
         <ul class="header-nav nav-links">
           {% include nav-links.html %}
         </ul>
-        <h1 class="title-super text-thin">Jason Derr</h1>
-      </nav>
+        </nav>
+        <h1 class="title-super text-thin"><a href = "/">Jason Derr</h1></a>
       <hr>
       </div>
     </header>
+    <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+
+  </script>
 
 
 

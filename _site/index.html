@@ -4,11 +4,12 @@
 <head>
   <title>Jason Derr</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <script src="/js/jquery-3.2.0.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
 </head>
@@ -18,6 +19,8 @@
   <div class="col-md-12 text-left text-uppercase">
     <header class="row">
       <nav>
+        <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+        <label for="mobile-menu" class="show-mobile-menu">☰</label>
         <ul class="header-nav nav-links">
           <li><a href="/">Home</a></li>
 <li><a href="/about">About</a></li>
@@ -26,11 +29,22 @@
 <li><a href="/saxalocity">Saxalocity</a></li>
 <li><a href="/now">now</a></li>
         </ul>
-        <h1 class="title-super text-thin">Jason Derr</h1>
-      </nav>
+        </nav>
+        <h1 class="title-super text-thin"><a href = "/">Jason Derr</h1></a>
       <hr>
       </div>
     </header>
+    <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+
+  </script>
 
 
 
@@ -42,14 +56,13 @@
       <div class="container-fluid">
     <div class="full-hero hero-home">
       <div class="hero-content">
-        <h1> “If a man knows not which port he sails, no wind is favorable.”</h1>
+        <h1> Full-Stack Developer</h1>
       </div>
     </div>
-    <div class="home-callout">
+    <div class="col-md-12 home-callout">
       <h1 class="callout-title">Me in 30 Seconds</h1>
-      <div class="callout-copy">
-      <p class="home-p">
-      I am a very proud father who loves his son! Every Saturday is Saxo and Dado day so please don't get upset if I ignore your email and decline your phone call. I'm most likely in a sugar coma and playing Skylanders with my son. I am a single father who worked a full time job while also learning to become a Web Developer. I am very driven and goal oreinted. I'm fascinated with the usable psychology of self-improvement, Stoicism, and philosophy. A California native who loves surfing, hiking, and running with my dog. If you like to know more about me check me out <a href="/about" target="_blank"> Here.</a></p>
+      <div class="col-md-12 callout-copy">
+      <p class="home-p">Honestly, I only need 10 seconds because my son is the most important thing in my life and that will forever be the case. Every Sunday is "Saxo & Dado day", which means I'm probably sunburnt, hopped up on sugar, and getting shot at with a nerf gun. I am a single father who is fascinated with the usable psychology of self-improvement, Stoicism, and Philosophy. A California native who loves surfing, hiking, and running with my dog. If you would like to know more about my story as a developer, check me out <a href="/about"> Here.</a></p>
       </p>
       </div>
     </div>
@@ -141,10 +154,10 @@
       <div class="col-xs-12 text-center">
         <hr class="footer-hr">
         <div class="social">
-          <a href="https://twitter.com/TheStoicDev" target="_blank" class="zocial-twitter"> </a>
-          <a href="https://plus.google.com/109417711220822823797" class="zocial-googleplus" ></a>
-          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="zocial-linkedin"></a>
-          <a href="https://github.com/stoicbum" target="_blank" class="zocial-github"></a>
+          <a href="https://twitter.com/TheStoicDev" target="_blank" <i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/jasonderr/" target="_blank" <i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" <i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/stoicbum" target="_blank" <i class="fab fa-github"></i></a>
         </div>
       </div>
     </footer>

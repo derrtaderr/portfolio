@@ -4,11 +4,12 @@
 <head>
   <title>Jason Derr</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <script src="/js/jquery-3.2.0.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
 </head>
@@ -18,6 +19,8 @@
   <div class="col-md-12 text-left text-uppercase">
     <header class="row">
       <nav>
+        <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+        <label for="mobile-menu" class="show-mobile-menu">☰</label>
         <ul class="header-nav nav-links">
           <li><a href="/">Home</a></li>
 <li><a href="/about">About</a></li>
@@ -26,11 +29,22 @@
 <li><a href="/saxalocity">Saxalocity</a></li>
 <li><a href="/now">now</a></li>
         </ul>
-        <h1 class="title-super text-thin">Jason Derr</h1>
-      </nav>
+        </nav>
+        <h1 class="title-super text-thin"><a href = "/">Jason Derr</h1></a>
       <hr>
       </div>
     </header>
+    <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+
+  </script>
 
 
 
@@ -50,24 +64,24 @@
         <div class="current">
             <img src="/images/poster.jpg" alt="Image title 1"
                 data-large-version = "https://www.youtube.com/embed/983-qer6Mng"
-                data-title= "saxalocity trailer"
-                data-description = "A sneak peak at saxalocity">
+                data-title= "Saxalocity Trailer"
+                data-description = "Get ready for Saxalocity! coming summer 2018">
         </div>
         <div class>
             <img src="/images/poster.jpg" alt="Image title 2"
                 data-large-version="https://www.youtube.com/embed/983-qer6Mng"
-                data-title ="saxalocity episode 1."
+                data-title ="Saxalocity ep. 1"
                 data-description = "In this episode Sax has fun with slow-mo. hold on to your butts!!">
         </div>
     </div>
     <div class="col col-content">
         <div class="gallery-video" id="gallery-video">
-            <iframe class= "player"width="560" height="315" src="https://www.youtube.com/embed/983-qer6Mng" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe class= "player" width="560" height="315" src="https://www.youtube.com/embed/983-qer6Mng" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
     </div>
     <div class="col col-aside gallery-info" id="gallery-info">
         <h3 class="title">Saxalocity Trailer</h3>
-        <p class="description">Get ready for Saxalocity! coming this summer</p>
+        <p class="description">Get ready for Saxalocity! coming summer 2018</p>
     </div>
 </div>
 
@@ -76,10 +90,10 @@
       <div class="col-xs-12 text-center">
         <hr class="footer-hr">
         <div class="social">
-          <a href="https://twitter.com/TheStoicDev" target="_blank" class="zocial-twitter"> </a>
-          <a href="https://plus.google.com/109417711220822823797" class="zocial-googleplus" ></a>
-          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="zocial-linkedin"></a>
-          <a href="https://github.com/stoicbum" target="_blank" class="zocial-github"></a>
+          <a href="https://twitter.com/TheStoicDev" target="_blank" <i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/jasonderr/" target="_blank" <i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" <i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/stoicbum" target="_blank" <i class="fab fa-github"></i></a>
         </div>
       </div>
     </footer>
